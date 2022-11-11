@@ -1,0 +1,68 @@
+@import "variables";
+
+.listItem {
+  margin: 20px 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+.new-item {
+  position: relative;
+  background: #fafafa;
+  border: 2px solid $orange;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  padding: 16px 10px;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+
+  &__title {
+    color: $black;
+    margin-bottom: 20px;
+  }
+  &__info {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__author {
+    color: $black;
+    font-style: italic;
+  }
+  &__date {
+    color: $black;
+    font-style: italic;
+  }
+  &__score {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    span {
+      color: $black;
+      font-style: italic;
+      margin-left: 5px;
+    }
+  }
+}
+
+.new-item:hover {
+  z-index: 1;
+  border: 2px solid $bg-element;
+}
+
+.new-item:after {
+  content: "";
+  position: absolute;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  -webkit-transition-property: width;
+  transition-property: width;
+  z-index: -1;
+  background: $bg-element;
+  height: 100%;
+  left: 0;
+  top: 0;
+  width: 0;
+}
+.new-item:hover:after {
+  width: 100%;
+}

@@ -1,0 +1,19 @@
+.wrapper-commentlist {
+  padding-top: 15px;
+  background: rgba(255, 223, 140, 0.45);
+  display: flex;
+  flex-direction: column;
+  border: #fe5f1e 2px double;
+}
+.comment {
+  margin-left: 25px;
+}
+.text-comment {
+  overflow: hidden;
+  word-break: break-all;
+  padding: 15px;
+  border-radius: 15px;
+  border-left: 1px solid #fe5f1e;
+  border-bottom: 1px solid #fe5f1e;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.06);
+}

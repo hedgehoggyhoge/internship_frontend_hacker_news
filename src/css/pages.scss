@@ -1,0 +1,54 @@
+.header {
+  height: 100px;
+  width: 1024px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  width: 1024px;
+}
+.wrapper-btn {
+  width: 1024px;
+  display: flex;
+  justify-content: space-between;
+}
+.new-card {
+  margin-top: 25px;
+  background: rgba(238, 238, 93, 0.55);
+  border-radius: 20px 20px 0 0;
+  padding: 30px;
+  &__title {
+    margin-bottom: 20px;
+  }
+  &__url {
+    color: $black;
+    font-style: italic;
+    margin-bottom: 20px;
+  }
+  &__info {
+    display: flex;
+    justify-content: space-between;
+    color: #fe5f1e;
+  }
+  &__data {
+    color: $orange;
+  }
+  &__author {
+    em {
+      color: $orange;
+    }
+  }
+  &__message {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    p {
+      color: $orange;
+      margin-left: 10px;
+    }
+  }
+}
