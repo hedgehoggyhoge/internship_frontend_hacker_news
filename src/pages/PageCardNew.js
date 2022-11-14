@@ -71,7 +71,7 @@ const PageCardNew = () => {
           {comments.length ? (
             <CommentList />
           ) : (
-            "Нет ни одного комментария... Будте первым"
+            "Пока пусто... Напиши скорее!"
           )}
         </div>
       </div>

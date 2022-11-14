@@ -9,7 +9,7 @@
 .new-item {
   position: relative;
   background: #fafafa;
-  border: 2px solid $orange;
+  border: 2px solid $light-blue;
   border-radius: 15px;
   margin-bottom: 20px;
   padding: 16px 10px;
@@ -17,7 +17,7 @@
   transition-duration: 0.4s;
 
   &__title {
-    color: $black;
+    color: $blue;
     margin-bottom: 20px;
   }
   &__info {
@@ -25,11 +25,11 @@
     justify-content: space-between;
   }
   &__author {
-    color: $black;
+    color: $blue;
     font-style: italic;
   }
   &__date {
-    color: $black;
+    color: $blue;
     font-style: italic;
   }
   &__score {
@@ -37,7 +37,7 @@
     justify-content: center;
     align-items: center;
     span {
-      color: $black;
+      color: $blue;
       font-style: italic;
       margin-left: 5px;
     }
@@ -47,17 +47,19 @@
 .new-item:hover {
   z-index: 1;
   border: 2px solid $bg-element;
+  cursor: pointer;
+  position: relative;
 }
-
 .new-item:after {
   content: "";
   position: absolute;
-  -webkit-transition-duration: 0.4s;
+  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+  //background: $bg-element;
+  -webkit-transition-duration: 0.8s;
   transition-duration: 0.4s;
   -webkit-transition-property: width;
   transition-property: width;
   z-index: -1;
-  background: $bg-element;
   height: 100%;
   left: 0;
   top: 0;

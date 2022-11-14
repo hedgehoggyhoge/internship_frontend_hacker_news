@@ -1,70 +1,67 @@
-# Getting Started with Create React App
+# Hacker-News_Тестовое
+### _Интерфейс для сайта ***Hacker News***, состоящий из двух страниц_
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![Иллюстрация к проекту](https://media.istockphoto.com/photos/cyber-attack-written-newspaper-picture-id499538773?k=20&m=499538773&s=612x612&w=0&h=A8Y9cwzv_t8sSa8_5Ay6Keybs8wdVaKkja0tuMZ4DNI=)
 
-## Available Scripts
+---
+## Продуктовые требования
+### Главная страница
+- Показывает последние 100 новостей в виде списка, отсортированного по дате, самые свежие сверху ✅.
+- Каждая новость содержит ✅:
+    - название
+    - рейтинг
+    - ник автора
+    - дату публикации
+- По клику на новость происходит переход на страницу новости ✅
+- Список новостей автоматически обновляться раз в минуту без участия пользователя ✅
+- На странице есть кнопка для принудительного обновления списка новостей ✅
 
-In the project directory, you can run:
+### Страница новости
+- Содержит ✅:
+    - ссылку на новость
+    - заголовок новости
+    - дату
+    - автора
+    - счётчик количества комментариев
+    - список комментариев в виде дерева
+- Корневые комментарии подгружаются сразу же при входе на страницу, вложенные — по клику на корневой ✅
+- На странице есть быть кнопка для принудительного обновления списка комментариев ✅
+- На странице есть быть кнопка для возврата к списку новостей ✅
 
-### `yarn start`
+## Технические требования
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Приложение разработано с использованием React и Redux ✅
+- Использован [официальный API Hacker News](https://github.com/HackerNews/API). Вызовы Hacker News API и обработка данных от него производятся напрямую с фронтенда ✅
+- Роутинг выполнен с использованием [React Router v5](https://github.com/ReactTraining/react-router/releases/tag/v5.0.0) ✅
+- Фреймворк UI на чистом **СSS** с **SCSS** по красоте ✅
+- Пакетный менеджер `yarn` ✅
+- Приложение запускается по адресу `localhost:3000` командой `yarn start` ✅
+- При переходах по ссылкам страница не перезагружается ✅
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Инструкция по запуску
 
-### `yarn test`
+```sh
+"yarn start": Запускает приложение в режиме разработки.
+Открыть http://localhost:3000 чтобы просмотреть в вашем браузере.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Страница перезагрузится и вы также можете увидеть любые ошибки lint в консоли.
+```
 
-### `yarn build`
+```sh
+"yarn build": Создает приложение для производства в папке build.
+Он правильно связывает React в рабочем режиме и оптимизирует сборку для достижения наилучшей производительности.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Сборка сокращена, и имена файлов включают хэши.
+Приложение готово к развертыванию!
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```sh
+ "yarn test": Запускает тестовый прогон в режиме интерактивного просмотра.
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```sh
+"yarn eject": Примечание: это односторонняя операция. Как только вы запустите, вы не сможете обратно отменить команду.
 
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Если вас не устраивает инструмент сборки и выбор конфигурации, вы можете отказаться от него в любое время. Эта команда удалит единственную зависимость сборки из проекта.
+```
+**✨Magic ✨**

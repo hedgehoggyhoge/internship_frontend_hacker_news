@@ -17,4 +17,3 @@ export const fetchNews =  () => {
         dispatch(addNewsSuccessAction(stories))
     }
 }
-

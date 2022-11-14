@@ -5,7 +5,7 @@
 @import "commentItem";
 
 body {
-  background: #000000;
+  background: rgba(185, 235, 246, 0.9);
 }
 #root {
   max-width: 1440px;
@@ -16,75 +16,32 @@ body {
   align-items: center;
   padding: 0px 10px;
 }
-//.container {
-//  max-width: 1024px;
-//  background: var(--gray-line);
-//}
-//.wrapper-page__header {
-//  min-height: 100px;
-//  display: flex;
-//  justify-content: center;
-//  align-items: center;
-//}
+
 button {
   display: inline-block;
-  background-color: $bg-element;
+  background: linear-gradient(92.88deg, #455EB5 9.16%, #5643CC 43.89%, #673FD7 64.72%);
   font-weight: bold;
-  color: $black;
-  border-radius: 30px;
-  padding: 10px 20px;
+  font-size: large;
+  color: $light-blue;
+  border-radius: 50px;
+  padding: 40px 30px;
   min-width: 100px;
   text-align: center;
   cursor: pointer;
   transition: background-color var(--duration) ease-in-out,
     border-color var(--duration) ease-in-out;
-  border: 1px solid var(--orange);
+  border: 1px solid var(--blue);
+  text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
+  //transition: all .5s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation
 }
 button:hover {
-  background-color: $orange;
+  background-color: $light-blue;
   color: #f6f6f6;
+  position: relative;
+  overflow: hidden;
+  transition: 0.2s all ease;
+  box-shadow: rgba(30, 3, 213, 0.5) 0 10px 90px;
 }
-//
-//ul li {
-//  list-style: none;
-//}
-//a,
-//a:visited {
-//  text-decoration: none;
-//}
-//.wrapper-btn {
-//  display: flex;
-//  min-width: 600px;
-//  justify-content: space-between;
-//}
-//.new-card {
-//  margin-top: 25px;
-//  background: rgba(238, 238, 93, 0.55);
-//  border-radius: 20px 20px 0 0;
-//  padding: 30px;
-//}
-//.new-card__title {
-//  margin-bottom: 20px;
-//}
-//.new-card__url {
-//  color: var(--black);
-//  font-style: italic;
-//  margin-bottom: 20px;
-//}
-//.new-card__info {
-//  display: flex;
-//  justify-content: space-between;
-//  color: #fe5f1e;
-//}
-//.message {
-//  display: flex;
-//  justify-content: center;
-//  align-items: center;
-//}
-//.message p {
-//  margin-left: 10px;
-//}
-//.wrapper-page__content {
-//  display: flex;
-//  flex-direction: column;
-//}

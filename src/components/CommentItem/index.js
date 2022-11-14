@@ -35,9 +35,6 @@ const [isOpenComment, setOpenComments] = useState(false)
                 </div>
             }
         </>
-
-
-
     );
 };
 

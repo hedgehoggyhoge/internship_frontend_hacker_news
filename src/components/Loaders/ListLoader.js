@@ -15,4 +15,3 @@ const ListLoader = () => (
 )
 
 export default ListLoader
-
