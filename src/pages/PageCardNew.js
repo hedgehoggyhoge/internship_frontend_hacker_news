@@ -5,7 +5,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { loaderOnAction } from "../store/reducers/loaderReducer";
 import { fetchComments } from "../asyncActions/comments";
 import { dateFormatting } from "../utils/dateFormatting";
-import message from "../assets/img/message.svg";
+import message from "../assets/img/envelope.svg";
 
 const PageCardNew = () => {
   const { id } = useParams();

@@ -1,5 +1,5 @@
 import React from "react";
-import star from "../../assets/img/star.svg";
+import star from "../../assets/img/circle-button.svg";
 import { dateFormatting } from "../../utils/dateFormatting";
 
 const NewItem = ({ title, score, time, by, descendants }) => {
