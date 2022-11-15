@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import './commentItem.css'
-import arrow from '../../assets/img/arrow-down.svg'
+import arrow_symbol from './arrow_symbol.svg'
 
 const CommentItem = ({data}) => {
 const [showSubComments, setShowSubComments] = useState([])
@@ -27,7 +27,7 @@ const [isOpenComment, setOpenComments] = useState(false)
                 ? null
                 :<div onClick={() => handlerSubComments(data?.kids)} className='comment'>
                     <p className='text-comment' dangerouslySetInnerHTML={{__html: data.text}}/>
-                    {data?.kids && <img src={arrow} style={{width:20, marginLeft: 20}}/>}
+                    {data?.kids && <img src={arrow_symbol} style={{width:20, marginLeft: 20}}/>}
                     <br/>
                     <br/>
                     <br/>

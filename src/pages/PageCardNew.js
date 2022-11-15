@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
-import CommentList from "../components/CommentList";
+import CommentList from "../components/Comments";
 import { useDispatch, useSelector } from "react-redux";
-import { loaderOnAction } from "../store/reducers/loaderReducer";
-import { fetchComments } from "../asyncActions/comments";
-import { dateFormatting } from "../utils/dateFormatting";
-import message from "../assets/img/envelope.svg";
+import { loaderOnAction } from "../reducer/loaderReducer";
+import { fetchComments } from "../components/Comments/comments";
+import { dateFormatting } from "../components/Comments/dateFormatting";
+import envelope from "./envelope.svg";
 
 const PageCardNew = () => {
   const { id } = useParams();
@@ -32,7 +32,7 @@ const PageCardNew = () => {
       <div className="header">
         <div className="wrapper-btn">
           <Link to="/">
-            <button>На главную</button>
+            <button>Back</button>
           </Link>
           <button
             onClick={() => {
@@ -40,7 +40,7 @@ const PageCardNew = () => {
               dispatch(fetchComments(id));
             }}
           >
-            Обновить комментарии
+            Update
           </button>
         </div>
       </div>
@@ -62,7 +62,7 @@ const PageCardNew = () => {
               </b>
             </div>
             <div className="new-card__message">
-              <img src={message} width="20" alt="иконка сообщения" />
+              <img src={envelope} width="20" alt="иконка сообщения" />
               <p>{headerNew.descendants}</p>
             </div>
           </div>

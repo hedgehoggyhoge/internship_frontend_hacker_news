@@ -1,6 +1,6 @@
 import React from "react";
-import star from "../../assets/img/circle-button.svg";
-import { dateFormatting } from "../../utils/dateFormatting";
+import circle from "./circle.svg";
+import { dateFormatting } from "../Comments/dateFormatting";
 
 const NewItem = ({ title, score, time, by, descendants }) => {
   return (
@@ -10,7 +10,7 @@ const NewItem = ({ title, score, time, by, descendants }) => {
         <p className="new-item__author">{by}</p>
         <time className="new-item__date">{dateFormatting(time)}</time>
         <div className="new-item__score">
-          <img src={star} width="20" alt="картинка рейтинга" />
+          <img src={circle} width="20" alt="картинка рейтинга" />
           <span>{score}</span>
         </div>
       </div>

@@ -4,9 +4,9 @@ import { Link } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 
 import NewItem from "../components/NewItem";
-import { loaderOnAction } from "../store/reducers/loaderReducer";
-import { fetchNews } from "../asyncActions/news";
-import ListLoader from "../components/Loaders/ListLoader";
+import { loaderOnAction } from "../reducer/loaderReducer";
+import { fetchNews } from "./news";
+import ListLoader from "../components/Comments/ListLoader";
 
 const NewsList = () => {
   const dispatch = useDispatch();

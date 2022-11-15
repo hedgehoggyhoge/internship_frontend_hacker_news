@@ -1,8 +1,8 @@
 import {createStore, applyMiddleware, combineReducers} from 'redux';
 import thunk from "redux-thunk";
-import {newsReducer} from "./reducers/newsReducer";
-import {loaderReducer} from "./reducers/loaderReducer";
-import {commentsReducer} from "./reducers/commentsReducer";
+import {newsReducer} from "./newsReducer";
+import {loaderReducer} from "./loaderReducer";
+import {commentsReducer} from "./commentsReducer";
 
 const rootReducer = combineReducers({
     newsReducer,

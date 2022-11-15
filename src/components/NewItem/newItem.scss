@@ -1,4 +1,4 @@
-@import "variables";
+@import "src/css/variables";
 
 .listItem {
   margin: 20px 0 0;
@@ -64,6 +64,9 @@
   left: 0;
   top: 0;
   width: 0;
+  border-radius: 15px;
+  margin-bottom: 10px;
+  padding: 0px 0px;
 }
 .new-item:hover:after {
   width: 100%;

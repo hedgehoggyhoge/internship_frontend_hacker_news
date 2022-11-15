@@ -1,8 +1,8 @@
 @import "variables";
 @import "nullStyles";
-@import "pages";
-@import "newItem";
-@import "commentItem";
+@import "src/pages/pages";
+@import "src/components/NewItem/newItem";
+@import "src/components/CommentItem/commentItem";
 
 body {
   background: rgba(185, 235, 246, 0.9);
@@ -19,9 +19,14 @@ body {
 
 button {
   display: inline-block;
+  //align-items: baseline;
+  width: 30%;
+  //margin-right: 70%;
+  //margin-left: 50%;
+  //vertical-align: bottom;
   background: linear-gradient(92.88deg, #455EB5 9.16%, #5643CC 43.89%, #673FD7 64.72%);
-  font-weight: bold;
-  font-size: large;
+  font-weight: bolder;
+  font-size: x-large;
   color: $light-blue;
   border-radius: 50px;
   padding: 40px 30px;
@@ -32,8 +37,6 @@ button {
     border-color var(--duration) ease-in-out;
   border: 1px solid var(--blue);
   text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
-  //transition: all .5s;
-  user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation
 }

@@ -1,10 +1,10 @@
 import "./css/mainStyle.scss";
 
 import { useEffect } from "react";
-import { fetchNews } from "./asyncActions/news";
+import { fetchNews } from "./pages/news";
 import { useDispatch } from "react-redux";
 import NewsList from "./pages/NewsList";
-import { loaderOnAction } from "./store/reducers/loaderReducer";
+import { loaderOnAction } from "./reducer/loaderReducer";
 
 import { Route, Switch } from "react-router-dom";
 import PageCardNew from "./pages/PageCardNew";

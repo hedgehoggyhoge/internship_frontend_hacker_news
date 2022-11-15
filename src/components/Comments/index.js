@@ -1,10 +1,10 @@
 import React, {useEffect, useState} from 'react';
 
-import './comentList.css'
+import './comments.css'
 import CommentItem from "../CommentItem";
 import {useDispatch, useSelector} from "react-redux";
-import {loaderOnAction} from "../../store/reducers/loaderReducer";
-import ListLoader from "../Loaders/ListLoader";
+import {loaderOnAction} from "../../reducer/loaderReducer";
+import ListLoader from "./ListLoader";
 
 const CommentList = () => {
     const dispatch = useDispatch()
