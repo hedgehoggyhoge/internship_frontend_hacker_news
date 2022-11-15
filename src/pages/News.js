@@ -5,10 +5,10 @@ import { useDispatch, useSelector } from "react-redux";
 
 import NewItem from "../components/NewItem";
 import { loaderOnAction } from "../reducer/loaderReducer";
-import { fetchNews } from "./news";
-import ListLoader from "../components/Comments/ListLoader";
+import { fetchNews } from "./Main";
+import Listing from "../components/Comments/Listing";
 
-const NewsList = () => {
+const News = () => {
   const dispatch = useDispatch();
   const { loading } = useSelector((state) => state.loaderReducer);
   const { news } = useSelector((state) => state.newsReducer);
@@ -37,11 +37,11 @@ const NewsList = () => {
             })}
           </ul>
         ) : (
-          [...new Array(6)].map((_, index) => <ListLoader key={index} />)
+          [...new Array(6)].map((_, index) => <Listing key={index} />)
         )}
       </div>
     </>
   );
 };
 
-export default NewsList;
+export default News;

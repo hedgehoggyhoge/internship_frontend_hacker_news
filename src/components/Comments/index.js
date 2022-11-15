@@ -4,7 +4,7 @@ import './comments.css'
 import CommentItem from "../CommentItem";
 import {useDispatch, useSelector} from "react-redux";
 import {loaderOnAction} from "../../reducer/loaderReducer";
-import ListLoader from "./ListLoader";
+import Listing from "./Listing";
 
 const CommentList = () => {
     const dispatch = useDispatch()
@@ -18,7 +18,7 @@ const CommentList = () => {
         <div className='wrapper-commentlist'>
             {loading
                 ? [...new Array(3)].map((_, index) => (
-                    <ListLoader key={index} />))
+                    <Listing key={index} />))
                 :comments.map(comm => <CommentItem key={comm.id} data = {comm}/>)}
         </div>
     );

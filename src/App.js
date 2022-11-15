@@ -1,13 +1,13 @@
-import "./css/mainStyle.scss";
+import "./css/mainPage.scss";
 
 import { useEffect } from "react";
-import { fetchNews } from "./pages/news";
+import { fetchNews } from "./pages/Main";
 import { useDispatch } from "react-redux";
-import NewsList from "./pages/NewsList";
+import News from "./pages/News";
 import { loaderOnAction } from "./reducer/loaderReducer";
 
 import { Route, Switch } from "react-router-dom";
-import PageCardNew from "./pages/PageCardNew";
+import SinglePage from "./pages/SinglePage";
 
 function App() {
   const dispatch = useDispatch();
@@ -22,8 +22,8 @@ function App() {
 
   return (
     <Switch>
-      <Route exact path="/" component={NewsList} />
-      <Route path="/carditem/:id" component={PageCardNew} />
+      <Route exact path="/" component={News} />
+      <Route path="/carditem/:id" component={SinglePage} />
     </Switch>
   );
 }

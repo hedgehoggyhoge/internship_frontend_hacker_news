@@ -1,6 +1,6 @@
 import React from "react";
 import circle from "./circle.svg";
-import { dateFormatting } from "../Comments/dateFormatting";
+import { dateLogic } from "../Comments/DateLogic";
 
 const NewItem = ({ title, score, time, by, descendants }) => {
   return (
@@ -8,7 +8,7 @@ const NewItem = ({ title, score, time, by, descendants }) => {
       <h3 className="new-item__title">{title}</h3>
       <div className="new-item__info">
         <p className="new-item__author">{by}</p>
-        <time className="new-item__date">{dateFormatting(time)}</time>
+        <time className="new-item__date">{dateLogic(time)}</time>
         <div className="new-item__score">
           <img src={circle} width="20" alt="картинка рейтинга" />
           <span>{score}</span>

@@ -3,11 +3,11 @@ import { Link, useParams } from "react-router-dom";
 import CommentList from "../components/Comments";
 import { useDispatch, useSelector } from "react-redux";
 import { loaderOnAction } from "../reducer/loaderReducer";
-import { fetchComments } from "../components/Comments/comments";
-import { dateFormatting } from "../components/Comments/dateFormatting";
+import { fetchComments } from "../components/Comments/Comments";
+import { dateLogic } from "../components/Comments/DateLogic";
 import envelope from "./envelope.svg";
 
-const PageCardNew = () => {
+const SinglePage = () => {
   const { id } = useParams();
   const dispatch = useDispatch();
   const { comments } = useSelector((state) => state.commentsReducer);
@@ -54,7 +54,7 @@ const PageCardNew = () => {
           </div>
           <div className="new-card__info">
             <time className="new-card__data">
-              {dateFormatting(headerNew.time)}
+              {dateLogic(headerNew.time)}
             </time>
             <div className="new-card__author">
               <b>
@@ -79,6 +79,6 @@ const PageCardNew = () => {
   );
 };
 
-export default PageCardNew;
+export default SinglePage;
 
 //`https://hacker-news.firebaseio.com/v0/item/33488227.json?print=pretty`

@@ -1,7 +1,7 @@
 import React from "react"
 import ContentLoader from "react-content-loader"
 
-const ListLoader = () => (
+const Listing = () => (
     <ContentLoader
         speed={1}
         width={1200}
@@ -14,4 +14,4 @@ const ListLoader = () => (
     </ContentLoader>
 )
 
-export default ListLoader
+export default Listing
