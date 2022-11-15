@@ -3,14 +3,19 @@ import ContentLoader from "react-content-loader"
 
 const Listing = () => (
     <ContentLoader
-        speed={1}
-        width={1200}
-        height={90}
-        viewBox="0 0 900 90"
-        backgroundColor="#f6f16a"
-        foregroundColor="#ecebeb"
+        speed={2}
+        width={1000}
+        height={160}
+        viewBox="0 0 400 160"
+        backgroundColor="#315bd8"
+        foregroundColor="#3785a0"
     >
-        <rect x="7" y="10" rx="19" ry="19" width="750" height="82" />
+        <rect x="48" y="8" rx="3" ry="3" width="88" height="6" />
+        <rect x="48" y="26" rx="3" ry="3" width="52" height="6" />
+        <rect x="0" y="56" rx="3" ry="3" width="410" height="6" />
+        <rect x="0" y="72" rx="3" ry="3" width="380" height="6" />
+        <rect x="0" y="88" rx="3" ry="3" width="178" height="6" />
+        <circle cx="20" cy="20" r="20" />
     </ContentLoader>
 )
 

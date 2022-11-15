@@ -1,19 +1,13 @@
-const initialState = {
-    comments: []
-}
+const initialState = {comments: []}
 
-const ADD_COMMENTS_SUCCESS = 'ADD_COMMENTS_SUCCESS'
+const addingComments = 'addingComments'
 
 export const commentsReducer = (state = initialState, action) => {
     switch (action.type) {
-        case ADD_COMMENTS_SUCCESS:
-            return {
-                ...state,
-                comments: action.payload
-            }
-        default:
-            return state
+        case addingComments:
+            return {...state, comments: action.payload }
+        default: return state
     }
 }
 
-export const addCommentsSuccessAction = (payload) => ({type: ADD_COMMENTS_SUCCESS, payload })
+export const addCommentsSuccessAction = (payload) => ({type: addingComments, payload })

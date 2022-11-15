@@ -14,7 +14,7 @@ const initialState = {
     loading: false,
     currentPage: 1,
 };
-// prettier-ignore
+// @ts-nocheck
 const handlers = {
     [GET_POSTS]:(state,action) =>({...state, posts:action.payload, loading:false}),
     [GET_POST]:(state,action) =>({...state, post:action.payload, loading:false}),
