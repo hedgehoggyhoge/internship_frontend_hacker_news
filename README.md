@@ -67,4 +67,4 @@
 **✨Magic ✨**
 
 ## Netlify-Link ##
-#### https://63736dff18f21e3ee07acf26--transcendent-haupia-efb9e0.netlify.app
+#### https://master--effulgent-pudding-d223ac.netlify.app/
