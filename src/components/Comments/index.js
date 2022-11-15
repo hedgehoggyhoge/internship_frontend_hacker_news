@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react';
 
-import './comments.css'
+import './comments.scss'
 import CommentItem from "../CommentItem";
 import {useDispatch, useSelector} from "react-redux";
 import {loaderOnAction} from "../../reducer/loaderReducer";
