@@ -4,8 +4,11 @@ import ContentLoader from "react-content-loader"
 const Listing = () => (
     <ContentLoader
         speed={2}
-        width={1000}
+        width={500}
+        length={1000}
         height={160}
+        margin={500}
+        padding={300}
         viewBox="0 0 400 160"
         backgroundColor="#315bd8"
         foregroundColor="#3785a0"
