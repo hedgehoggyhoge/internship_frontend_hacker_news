@@ -26,11 +26,16 @@
   }
   &__author {
     color: $blue;
-    font-style: italic;
+    font-style: normal;
+    position: relative;
+    top: -20px;
   }
   &__date {
     color: $blue;
-    font-style: italic;
+    font-style: normal;
+    position: relative;
+    left: 350px;
+    align-items: center;
   }
   &__score {
     display: flex;
@@ -38,7 +43,7 @@
     align-items: center;
     span {
       color: $blue;
-      font-style: italic;
+      font-style: normal;
       margin-left: 5px;
     }
   }

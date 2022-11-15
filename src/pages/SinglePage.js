@@ -25,7 +25,7 @@ const SinglePage = () => {
       setHeaderNew(res);
     };
     storie();
-  }, []);
+  });
 
   return (
     <>

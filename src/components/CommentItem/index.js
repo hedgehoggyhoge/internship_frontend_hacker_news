@@ -23,11 +23,11 @@ const [isOpenComment, setOpenComments] = useState(false)
 
     return (
         <>
-            {(data?.dead || data?.deleted)
+            {(data?.empty || data?.deleted)
                 ? null
-                :<div onClick={() => handlerSubComments(data?.kids)} className='comment'>
+                :<div onClick={() => handlerSubComments([])} className='comment'>
                     <p className='text-comment' dangerouslySetInnerHTML={{__html: data.text}}/>
-                    {data?.kids && <img src={arrow_symbol} style={{width:20, marginLeft: 20}}/>}
+                    {[] && <img src={arrow_symbol} style={{width:20, marginLeft: 20}} alt="картинка "/>}
                     <br/>
                     <br/>
                     <br/>
