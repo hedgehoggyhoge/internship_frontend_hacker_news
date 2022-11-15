@@ -1,10 +1,10 @@
-import gReact from "react";
+import React from "react";
 
 import { Link } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 
 import NewItem from "../components/NewItem";
-import { loaderOnAction } from "../redux/loaderReducer";
+import { loaderOnAction } from "../redux/reducer/loaderReducer";
 import { fetchNews } from "./Main";
 import Listing from "../components/Comments/Listing";
 

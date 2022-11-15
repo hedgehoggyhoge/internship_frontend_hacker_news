@@ -3,7 +3,7 @@ import React, {useEffect, useState} from 'react';
 import './comments.scss'
 import CommentItem from "../CommentItem";
 import {useDispatch, useSelector} from "react-redux";
-import {loaderOnAction} from "../../redux/loaderReducer";
+import {loaderOnAction} from "../../redux/reducer/loaderReducer";
 import Listing from "./Listing";
 
 const CommentList = () => {

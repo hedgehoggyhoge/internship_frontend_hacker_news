@@ -1,5 +1,5 @@
-import {addCommentsSuccessAction} from "../../redux/commentsReducer";
-import {loaderOffAction} from "../../redux/loaderReducer";
+import {addCommentsSuccessAction} from "../../redux/reducer/commentsReducer";
+import {loaderOffAction} from "../../redux/reducer/loaderReducer";
 
 
 export const fetchComments =  (storieId) => {

@@ -1,5 +1,5 @@
-import {addNewsSuccessAction} from "../redux/newsReducer";
-import {loaderOffAction} from "../redux/loaderReducer";
+import {addNewsSuccessAction} from "../redux/reducer/newsReducer";
+import {loaderOffAction} from "../redux/reducer/loaderReducer";
 
 export const fetchNews =  () => {
     return async dispatch => {
