@@ -32,7 +32,7 @@ const SinglePage = () => {
       <div className="header">
         <div className="wrapper-btn">
           <Link to="/">
-            <button>Back</button>
+            <button>Назад</button>
           </Link>
           <button
             onClick={() => {
@@ -40,7 +40,7 @@ const SinglePage = () => {
               dispatch(fetchComments(id));
             }}
           >
-            Update
+            Обновить
           </button>
         </div>
       </div>
@@ -53,25 +53,25 @@ const SinglePage = () => {
             <a href={headerNew.url}>{headerNew.url}</a>
           </div>
           <div className="new-card__info">
-            <time className="new-card__data">
-              {dateLogic(headerNew.time)}
-            </time>
             <div className="new-card__author">
               <b>
                 <em>{headerNew.by}</em>
               </b>
             </div>
-            <div className="new-card__message">
-              <img src={envelope} width="20" alt="иконка сообщения" />
-              <p>{headerNew.descendants}</p>
-            </div>
+            <span className="new-card__data">
+              {dateLogic(headerNew.time)}
+            </span>
+          </div>
+          <div className="new-card__message">
+            <img src={envelope} width="20" alt="иконка сообщения" />
+            <p>{headerNew.descendants}</p>
           </div>
         </div>
         <div className="comments-list">
           {comments.length ? (
             <CommentList />
           ) : (
-            "Пока пусто... Напиши скорее!"
+            "Нет комментариев"
           )}
         </div>
       </div>

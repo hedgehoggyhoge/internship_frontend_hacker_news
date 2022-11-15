@@ -5,8 +5,9 @@
 @import "src/components/CommentItem/commentItem";
 
 body {
-  background: rgba(185, 235, 246, 0.9);
+  background: #ffffff;
 }
+
 #root {
   max-width: 1440px;
   min-width: 320px;
@@ -14,37 +15,31 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0px 10px;
+  padding: 0 10px;
 }
 
 button {
-  display: inline-block;
-  //align-items: baseline;
-  width: 30%;
-  //margin-right: 70%;
-  //margin-left: 50%;
-  //vertical-align: bottom;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 50px;
   background: linear-gradient(92.88deg, #455EB5 9.16%, #5643CC 43.89%, #673FD7 64.72%);
   font-weight: bolder;
-  font-size: x-large;
-  color: $light-blue;
-  border-radius: 50px;
-  padding: 40px 30px;
-  min-width: 100px;
-  text-align: center;
+  font-size: 16px;
+  line-height: 20px;
+  color: #f6f6f6;
+  border-radius: 15px;
   cursor: pointer;
-  transition: background-color var(--duration) ease-in-out,
-    border-color var(--duration) ease-in-out;
   border: 1px solid var(--blue);
   text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
   -webkit-user-select: none;
-  touch-action: manipulation
-}
-button:hover {
-  background-color: $light-blue;
-  color: #f6f6f6;
-  position: relative;
-  overflow: hidden;
+  touch-action: manipulation;
   transition: 0.2s all ease;
-  box-shadow: rgba(30, 3, 213, 0.5) 0 10px 90px;
+
+  &:hover {
+    -webkit-box-shadow: 0 5px 14px 0 rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 0 5px 14px 0 rgba(34, 60, 80, 0.2);
+    box-shadow: 0 5px 14px 0 rgba(34, 60, 80, 0.2);
+  }
 }

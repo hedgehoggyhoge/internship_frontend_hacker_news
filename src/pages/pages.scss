@@ -1,58 +1,100 @@
 .header {
-  height: 100px;
+  padding-top: 50px;
   width: 1024px;
-  background: rgba(175, 124, 241, 0.55);
   border-radius: 15px;
   margin-bottom: 10px;
-  padding: 0px 0px;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  @media screen and (max-width: 1024px) {
+    width: 100%;
+    padding: 50px 30px 0;
+  }
 }
+
 .main {
-  display: flex;
-  flex-direction: column;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 40px;
   width: 1024px;
+
+  @media screen and (max-width: 1024px) {
+    width: 100%;
+    padding: 0 30px;
+  }
 }
+
 .wrapper-btn {
-  width: 1024px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  flex-wrap: wrap;
+
+   a {
+     margin-right: 10px;
+
+     @media screen and (max-width: 489px) {
+       margin-right: 0;
+       margin-bottom: 10px;
+     }
+   }
 }
+
 .new-card {
   margin-top: 25px;
-  background: rgba(175, 124, 241, 0.55);
-  border-radius: 20px 20px 0 0;
+  background: #fafafa;
+  border: 1px solid $light-blue;
+  border-radius: 15px 15px 0 0;
+  border-bottom: none;
   padding: 30px;
+
   &__title {
     margin-bottom: 20px;
+    color: $blue;
   }
+
   &__url {
     color: $light-blue;
     font-style: italic;
     margin-bottom: 20px;
+
+    a {
+      text-decoration: underline;
+    }
   }
+
   &__info {
     display: flex;
     justify-content: space-between;
     color: #b31efe;
   }
+
   &__data {
     color: $blue;
   }
+
   &__author {
+
     em {
       color: $blue;
     }
   }
+
   &__message {
     display: flex;
-    justify-content: center;
     align-items: center;
+    margin-top: 10px;
+
     p {
       color: $blue;
       margin-left: 10px;
     }
   }
+}
+
+.comments-list {
+  background: #fafafa;
+  border: 1px solid $light-blue;
+  border-radius: 0 0 15px 15px;
+  border-top: none;
+  padding: 30px;
 }

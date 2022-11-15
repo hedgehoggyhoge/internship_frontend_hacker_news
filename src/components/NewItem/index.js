@@ -5,16 +5,18 @@ import { dateLogic } from "../Comments/DateLogic";
 const NewItem = ({ title, score, time, by, descendants }) => {
   return (
     <li className="new-item">
-      <h3 className="new-item__title">{title}</h3>
+        <div className="new-item__header">
+            <h3 className="new-item__title">{title}</h3>
+            <div className="new-item__score">
+                <img src={circle} width="20" alt="картинка рейтинга" />
+                <span>{score}</span>
+            </div>
+        </div>
       <div className="new-item__info">
         <p className="new-item__author">{by}</p>
-        <time className="new-item__date">{dateLogic(time)}</time>
-        <div className="new-item__score">
-          <img src={circle} width="20" alt="картинка рейтинга" />
-          <span>{score}</span>
-        </div>
+        <span className="new-item__date">{dateLogic(time)}</span>
       </div>
-      <b>{descendants}</b>
+      <b className="new-item__desc">{descendants}</b>
     </li>
   );
 };
