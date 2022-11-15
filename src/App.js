@@ -4,7 +4,7 @@ import { useEffect } from "react";
 import { fetchNews } from "./pages/Main";
 import { useDispatch } from "react-redux";
 import News from "./pages/News";
-import { loaderOnAction } from "./reducer/loaderReducer";
+import { loaderOnAction } from "./redux/loaderReducer";
 
 import { Route, Switch } from "react-router-dom";
 import SinglePage from "./pages/SinglePage";

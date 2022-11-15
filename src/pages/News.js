@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 
 import NewItem from "../components/NewItem";
-import { loaderOnAction } from "../reducer/loaderReducer";
+import { loaderOnAction } from "../redux/loaderReducer";
 import { fetchNews } from "./Main";
 import Listing from "../components/Comments/Listing";
 

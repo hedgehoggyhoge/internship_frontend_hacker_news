@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import './commentItem.css'
+import './commentItem.scss'
 import arrow_symbol from './arrow_symbol.svg'
 
 const CommentItem = ({data}) => {

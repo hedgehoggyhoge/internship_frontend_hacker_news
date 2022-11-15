@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import CommentList from "../components/Comments";
 import { useDispatch, useSelector } from "react-redux";
-import { loaderOnAction } from "../reducer/loaderReducer";
+import { loaderOnAction } from "../redux/loaderReducer";
 import { fetchComments } from "../components/Comments/Comments";
 import { dateLogic } from "../components/Comments/DateLogic";
 import envelope from "./envelope.svg";
